@@ -22,13 +22,42 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+header {
+    top: 0.5rem;
+    right: 0; 
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+#iconUser {
+    width: 2rem;
+}
+
 .off-screen-menu {
     background-color:  #ffffff;
     height: 100vh;
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     position: fixed;
     top: 0;
+    z-index: 1;
     left: -450px;
     display: flex;
     flex-direction: column;
@@ -67,6 +96,9 @@ nav {
     padding: 1rem;
     display: flex;
     background-color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+    width: 20%;
 }
 
 /* ham menu */
