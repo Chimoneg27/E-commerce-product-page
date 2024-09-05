@@ -146,3 +146,24 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider button {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+img.displaySlide {
+    display: block;
+}
