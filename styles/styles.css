@@ -160,10 +160,26 @@ nav {
 }
 
 .slider button {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: none;
+    border-radius: 100%;
 }
 
 img.displaySlide {
     display: block;
+}
+
+.prev {
+    left: 0.5rem;
+}
+.next {
+    right: 0.5rem;
 }
