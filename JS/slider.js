@@ -1,9 +1,6 @@
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
-
-// initializeSlider()
-
 const initializeSlider = () => {
     if(slides.length > 0) {
         slides[slideIndex].classList.add("displaySlide");
@@ -33,6 +30,7 @@ const prevSlide = () => {
 }
 
 const nextSlide = () => {
+    clearInterval(intervalId)
     slideIndex++;
     showSlide(slideIndex);
 }
