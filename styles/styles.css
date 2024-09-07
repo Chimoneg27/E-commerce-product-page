@@ -270,3 +270,23 @@ img.displaySlide {
     color: black; 
     margin-right: 0.5rem;
 }
+
+#cartCount {
+    position: absolute;
+    top: 0.3rem;
+    right: 4.5rem;
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 0.25rem;
+    height: 10px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartImg {
+    position: relative;
+}
