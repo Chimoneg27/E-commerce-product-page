@@ -3,6 +3,7 @@ let cart = [];
 const minus = document.getElementById('minus');
 const plus = document.getElementById('plus');
 const cartCount = document.getElementById('cartCount');
+const addBtn = document.getElementById('addBtn');
 
 minus.addEventListener('click', () => {
   counter--;
