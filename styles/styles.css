@@ -298,7 +298,7 @@ img.displaySlide {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
+    position: absolute;
     padding: 0.75rem;
 }
 
