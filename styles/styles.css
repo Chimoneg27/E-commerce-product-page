@@ -309,6 +309,10 @@ img.displaySlide {
     border-radius: 10px;
 }
 
+#item p {
+    font-weight: bold;
+}
+
 #cartModal h2 {
     margin-left: 1rem;
     border-bottom: 1px solid var(--Grayish-blue);

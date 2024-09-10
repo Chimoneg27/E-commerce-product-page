@@ -10,6 +10,7 @@ const purchased = document.getElementById("purchased")
 const empty = document.getElementById("empty")
 const chckbtn = document.getElementById("chckbtn")
 const itemParagraph = document.querySelector('#item p');
+const deleteCart = document.getElementById("delete")
 
 const addToCart = () => {
   minus.addEventListener("click", () => {
@@ -43,11 +44,22 @@ const addToCart = () => {
       purchased.style.display = "flex"
       chckbtn.style.display = "block"
     }
-    console.log(cart)
-    itemParagraph.textContent = `${cart[0]} x $125.00`;})
+    itemParagraph.textContent = `$125.00 x ${cart[0]}  $${cart[0] * 125}.00`})
   }
 
   showCart.addEventListener("click", () => {
-    modal.style.display = "flex"
+    
+    if(modal.style.display === "none") {
+      modal.style.display = "flex"
+    } else {
+      modal.style.display = "none"
+    }
+  })
+
+  deleteCart.addEventListener("click", () => {
+    empty.style.display = "block"
+    purchased.style.display = "none"
+    cartCount.style.display = "none"
+    chckbtn.style.display  = "none"
   })
 addToCart()
